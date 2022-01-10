@@ -67,15 +67,15 @@
       $address = iconv("windows-1251", "utf-8", $fetch_service["address"]);
     }
 
-    $sheet -> SetCellValue("A".($i+1), $i);
-    $sheet -> SetCellValue("B".($i+1), $name_fridge);
-    $sheet -> SetCellValue("C".($i+1), $model);
-    $sheet -> SetCellValue("D".($i+1), $time);
-    $sheet -> SetCellValue("E".($i+1), $address);
-    $sheet -> SetCellValue("F".($i+1), $date_in);
-    $sheet -> SetCellValue("G".($i+1), $date_out);
-    $sheet -> SetCellValue("H".($i+1), $fio);
-    $sheet -> SetCellValue("I".($i+1), $price);
+    $sheet -> SetCellValue("A".($i+2), $i);
+    $sheet -> SetCellValue("B".($i+2), $name_fridge);
+    $sheet -> SetCellValue("C".($i+2), $model);
+    $sheet -> SetCellValue("D".($i+2), $time);
+    $sheet -> SetCellValue("E".($i+2), $address);
+    $sheet -> SetCellValue("F".($i+2), $date_in);
+    $sheet -> SetCellValue("G".($i+2), $date_out);
+    $sheet -> SetCellValue("H".($i+2), $fio);
+    $sheet -> SetCellValue("I".($i+2), $price);
   }
 
   $writer = new Xlsx($spreadsheet);
