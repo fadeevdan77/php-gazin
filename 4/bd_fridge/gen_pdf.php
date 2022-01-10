@@ -9,9 +9,9 @@
   $pdf -> AddPage();
  
   $pdf -> AddFont("Arial", "", "arial.php");
-  $pdf -> SetFont("Arial", "", "24");
+  $pdf -> SetFont("Arial", "", "18");
 
-  $pdf -> Cell(100, 10, "Заявки на ремонт", 0, 1, "C");
+  $pdf -> Cell(175, 10, "Заявки на ремонт", 1, 1, "C");
 
   $pdf -> SetFont("Arial", "", "6");
 
