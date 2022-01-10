@@ -18,6 +18,11 @@
   
   $sheet = $spreadsheet -> getActiveSheet();
 
+  $sheet -> setTitle("Заявки на ремонт");
+
+  $sheet -> SetCellValue("A1", "Заявки на ремонт");
+  $sheet -> mergeCells("A1:H1");
+
   $sheet -> getColumnDimension("A") -> setWidth(5);
   $sheet -> getColumnDimension("B") -> setWidth(15);
   $sheet -> getColumnDimension("C") -> setWidth(15);
@@ -28,15 +33,15 @@
   $sheet -> getColumnDimension("H") -> setWidth(30);
   $sheet -> getColumnDimension("I") -> setWidth(20);
 
-  $sheet -> SetCellValue("A1", "№");
-  $sheet -> SetCellValue("B1", "Марка");
-  $sheet -> SetCellValue("C1", "Модель");
-  $sheet -> SetCellValue("D1", "Срок гарантии, г.");
-  $sheet -> SetCellValue("E1", "Адрес");
-  $sheet -> SetCellValue("F1", "Дата начала");
-  $sheet -> SetCellValue("G1", "Дата окончания");
-  $sheet -> SetCellValue("H1", "ФИО");
-  $sheet -> SetCellValue("I1", "Стоимость, руб.");
+  $sheet -> SetCellValue("A2", "№");
+  $sheet -> SetCellValue("B2", "Марка");
+  $sheet -> SetCellValue("C2", "Модель");
+  $sheet -> SetCellValue("D2", "Срок гарантии, г.");
+  $sheet -> SetCellValue("E2", "Адрес");
+  $sheet -> SetCellValue("F2", "Дата начала");
+  $sheet -> SetCellValue("G2", "Дата окончания");
+  $sheet -> SetCellValue("H2", "ФИО");
+  $sheet -> SetCellValue("I2", "Стоимость, руб.");
 
   $query = mysqli_query($conn, "SELECT * FROM request");
   for($i = 1; $fetch_request = mysqli_fetch_array($query); $i++) {

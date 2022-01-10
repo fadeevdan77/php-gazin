@@ -14,6 +14,10 @@ if(!$_SESSION["rule"]) header("Location: .");
   $pdf -> AddPage();
  
   $pdf -> AddFont("Arial", "", "arial.php");
+    $pdf -> SetFont("Arial", "", "18");
+
+  $pdf -> Cell(195, 10, "Заявки на ремонт", 1, 1, "C");
+
   $pdf -> SetFont("Arial", "", "6");
 
   $pdf -> Cell(5, 5, "№", 1, 0, "C");
