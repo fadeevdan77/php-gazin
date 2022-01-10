@@ -11,6 +11,7 @@
    $rule = $st['rule'];
   }
   echo "<html><head><title>Редактирование данных</title></head><body>";
+  echo "<H2>Редактирование данных:</H2>";
   echo "<form action='save_edit_users.php' metod='get'>";
   echo "Имя пользователя: <input name='username' size='20' type='text' value='".$username."'>";
   echo "<br>Пароль: <input name='password' size='20' type='password' value=''>";
