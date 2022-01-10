@@ -11,7 +11,7 @@
   $pdf -> AddFont("Arial", "", "arial.php");
   $pdf -> SetFont("Arial", "", "24");
 
-  $pdf -> Cell(300, 30, "<h1>Заявки на ремонт", 0, 1, "C");
+  $pdf -> Cell(100, 10, "Заявки на ремонт", 0, 1, "C");
 
   $pdf -> SetFont("Arial", "", "6");
 
