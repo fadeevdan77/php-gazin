@@ -21,8 +21,8 @@
   $sheet -> setTitle("Заявки на ремонт");
 
   $sheet -> SetCellValue("A1", "Заявки на ремонт");
-  $sheet -> getStyle("A1") -> getAlignment() -> setHorizontal($align);
   $sheet -> mergeCells("A1:I1");
+  $sheet -> getStyle("A1:I1") -> getAlignment() -> setHorizontal("general");
 
   $sheet -> getColumnDimension("A") -> setWidth(5);
   $sheet -> getColumnDimension("B") -> setWidth(15);
