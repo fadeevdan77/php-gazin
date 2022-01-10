@@ -27,12 +27,12 @@
   $sheet -> getColumnDimension("A") -> setWidth(5);
   $sheet -> getColumnDimension("B") -> setWidth(15);
   $sheet -> getColumnDimension("C") -> setWidth(15);
-  $sheet -> getColumnDimension("D") -> setWidth(20);
+  $sheet -> getColumnDimension("D") -> setWidth(18);
   $sheet -> getColumnDimension("E") -> setWidth(30);
-  $sheet -> getColumnDimension("F") -> setWidth(20);
-  $sheet -> getColumnDimension("G") -> setWidth(20);
-  $sheet -> getColumnDimension("H") -> setWidth(30);
-  $sheet -> getColumnDimension("I") -> setWidth(20);
+  $sheet -> getColumnDimension("F") -> setWidth(15);
+  $sheet -> getColumnDimension("G") -> setWidth(15);
+  $sheet -> getColumnDimension("H") -> setWidth(50);
+  $sheet -> getColumnDimension("I") -> setWidth(18);
 
   $sheet -> SetCellValue("A2", "№");
   $sheet -> SetCellValue("B2", "Марка");
