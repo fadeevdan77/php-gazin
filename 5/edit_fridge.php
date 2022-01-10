@@ -6,10 +6,11 @@ if(!$_SESSION["rule"]) header("Location: .");
 ?>
 
 <html>
-<head
+<head>
 <title> Редактирование данных </title>
 </head>
 <body>
+<H2>Редактирование данных:</H2>
 <?php
  $conn = mysqli_connect("eu-cdbr-west-02.cleardb.net","b374ee7921ac55","547aa47c", "heroku_1ad19f5ab79e862") or die ("Невозможно подключиться к серверу");
  mysqli_query($conn, 'SET NAMES cp1251');
