@@ -14,8 +14,7 @@
     if($fetch = mysqli_fetch_array($query)) {
       $_SESSION["username"] = $fetch["username"];
       $_SESSION["rule"] = $fetch["rule"];
-      if($_SESSION["count"]) $_SESSION["count"]++;
-      else $_SESSION["count"] = 0;
+      if(!$_SESSION["count"]) $_SESSION["count"] = 0;
     }
     else {
       echo "<html><head><title>Авторизация</title></head><body>";
