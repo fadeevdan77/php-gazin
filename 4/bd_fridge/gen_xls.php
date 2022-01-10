@@ -22,7 +22,7 @@
 
   $sheet -> SetCellValue("A1", "Заявки на ремонт");
   $sheet -> mergeCells("A1:I1");
-  $sheet -> getStyle("A1:I1") -> getAlignment() -> setHorizontal("general");
+  $sheet -> getStyle("A1:I1") -> getAlignment() -> setHorizontal(Alignment::HORIZONTAL_GENERAL);
 
   $sheet -> getColumnDimension("A") -> setWidth(5);
   $sheet -> getColumnDimension("B") -> setWidth(15);
