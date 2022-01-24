@@ -24,7 +24,7 @@ print "<br>Дата окончания: <input name='date_out' size='20' type='date'
 value='".$date_out."'>";
   
 print "<br>id Холодильника: <select name='id_fridge'>";
-$result=mysqli_query($conn, "SELECT * FROM service");
+$result=mysqli_query($conn, "SELECT * FROM fridge");
 foreach($result as $row) {
   if($row["id"] == $id_service) echo "<option value='".$row["id"]."' selected>".$row["name"]." ".$row["model"]."</option>";
   else echo "<option value='".$row["id"]."'>".$row["name"]." ".$row["model"]."</option>";
