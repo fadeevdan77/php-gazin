@@ -12,22 +12,20 @@
 <br>Дата начала: <input name="date_in" size="20" type="date">
 <br>Дата окончания: <input name="date_out" size="20" type="date">
 
-<br>id Холодильника: <select name="id_fridge">
 <?php
-  $result=mysqli_query($conn, "SELECT * FROM fridge");
-  echo "<option value='' selected disabled hidden>...</option>";
-  foreach($result as $row)
-    echo "<option value='".$row["id"]."'>".$row["id"]."</option>";
-  echo "</select>";
+print "<br>id Холодильника: <select name='id_fridge'>";
+$result=mysqli_query($conn, "SELECT * FROM fridge");
+echo "<option value='' selected hidden>...</option>";
+foreach($result as $row) echo "<option value='".$row["id"]."'>".$row["name"]." ".$row["model"]."</option>";
+echo "</select>";
 ?>
 
-<br>id Сервисного центра: <select name="id_service">
 <?php
-  $result=mysqli_query($conn, "SELECT * FROM service");
-  echo "<option value='' selected disabled hidden>...</option>";
-  foreach($result as $row)
-    echo "<option value='".$row["id"]."'>".$row["id"]."</option>";
-  echo "</select>";
+print "<br>id Сервисного центра: <select name='id_service'>";
+$result=mysqli_query($conn, "SELECT * FROM service");
+echo "<option value='' selected hidden>...</option>";
+foreach($result as $row) echo "<option value='".$row["id"]."'>".$row["name"]."</option>";
+echo "</select>";
 ?>
 
 <br>ФИО: <input name="fio" size="20" type="text">
